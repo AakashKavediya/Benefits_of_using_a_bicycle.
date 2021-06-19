@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background: url(https://i.pinimg.com/564x/06/fd/e9/06fde95b7f583507d4cddc76f641b5c1.jpg) */
+    /* no-repeat center; */
+  background-size: cover;
+  position: relative;
+  color: black;
+  height: 100%;
+  /* position: fixed; */
+  font-size: 25px;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+.intro {
+  padding: 100px 0;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: black;
+}
+.timeline ul {
+  list-style: none;
+  padding: 50px 0;
+  /* margin-right: auto;
+    margin-left: auto;
+    text-align: center; */
+}
+.timeline ul li {
+  width: 6px;
+  padding-top: 50px;
+  margin: auto;
+  position: relative;
+  background: #fff;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background-color: #f45b69;
+}
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+  transform: translate3d(200px, 0, 0);
+}
+.timeline ul li:nth-child(even) div {
+  left: -445px;
+  transform: translate3d(-200px, 0, 0);
+}
+time {
+  display: block;
+  font-style: 1.4pc;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
