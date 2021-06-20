@@ -4,16 +4,22 @@
   box-sizing: border-box;
 }
 @media(max-width:750px){
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
   .img
   {
     background: url(Poster.gif)no-repeat center;
-    /* background-size: cover; */
+    background-size: 90%;
     height: 100vh;
   }
   body
   {
     padding: 2px;
     overflow-x: hidden;
+    /* width:1000px; */
   }
   .timeline ul {
     list-style: none;
