@@ -1,74 +1,81 @@
-*
-{
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-body
-{
-  padding: 2px;
-}
-.timeline ul {
-  list-style: none;
-  padding: 50px 0;
-}
-.timeline ul li {
-  width: 4px;
-  padding-top: 50px;
-  margin: auto;
-  /* position: relative; */
-  background: orangered;
-}
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  width: 120px;
-  padding: 10px;
-  background-color: #f45b69;
-}
-.timeline ul li:nth-child(odd) div {
-  left: 30px;
-  transform: translate3d(100px, 0, 0);
-}
-.timeline ul li:nth-child(even) div {
-  left: -150px;
-  transform: translate3d(-200px, 0, 0);
-}
-time {
-  display: block;
-  font-style: 1.4pc;
-  margin-bottom: 5px;
-  font-weight: bolder;
-}
-.timeline ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-}
-.timeline ul li.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
-}
-.container h1
-{
-  text-align: center;
-  justify-content: center;
-  border: 5px double black;
-  text-transform: uppercase;
-}
-h2
-{
-  color: #fd4655;
-  margin-top: 10px;
-  border-bottom: 5px solid #fd4655;
-  padding-bottom: 5px;
-  border-bottom-right-radius: 10px;
-  margin-bottom: 10px;
-  width: 300px;
-}
-p
-{
-  color: rgba(0, 0, 0, 0.741);
-  margin-top: 5px;
+@media(max-width:750px){
+  .img
+  {
+    background: url(Poster.gif)no-repeat center;
+    background-size: cover;
+    height: 100vh;
+  }
+  body
+  {
+    padding: 2px;
+  }
+  .timeline ul {
+    list-style: none;
+    padding: 50px 0;
+  }
+  .timeline ul li {
+    width: 4px;
+    padding-top: 50px;
+    margin: auto;
+    /* position: relative; */
+    background: orangered;
+  }
+  .timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 120px;
+    padding: 10px;
+    background-color: #f45b69;
+  }
+  .timeline ul li:nth-child(odd) div {
+    left: 30px;
+    transform: translate3d(100px, 0, 0);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -150px;
+    transform: translate3d(-200px, 0, 0);
+  }
+  time {
+    display: block;
+    font-style: 1.4pc;
+    margin-bottom: 5px;
+    font-weight: bolder;
+  }
+  .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  .container h1
+  {
+    text-align: center;
+    justify-content: center;
+    border: 5px double black;
+    text-transform: uppercase;
+  }
+  h2
+  {
+    color: #fd4655;
+    margin-top: 10px;
+    border-bottom: 5px solid #fd4655;
+    padding-bottom: 5px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+  p
+  {
+    color: rgba(0, 0, 0, 0.741);
+    margin-top: 5px;
+  }
 }
