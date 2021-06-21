@@ -102,6 +102,7 @@ p
   {
     padding: 2px;
     overflow-x: hidden;
+    /* overflow-x: visible; */
     /* width:1000px; */
   }
   .timeline ul {
